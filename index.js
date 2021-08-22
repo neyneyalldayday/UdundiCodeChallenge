@@ -1,5 +1,5 @@
 const toggleClose = () => {
-    let close = document.getElementById("starting-view");
+    let close = document.getElementById("starting-look");
     if (close.style.display === "none") {
       close.style.display = "block";
     } else {
