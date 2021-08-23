@@ -16,11 +16,11 @@ const toggleClose = () => {
     }
   };
 
-  const readMore = () => {
-     
+  const readMore = () => {     
     let newMessage = document.getElementById("anotherMessage");
     let moreDetails = document.getElementById("more-details");
     let close = document.getElementById("starting-look");
+    
     if (newMessage.style.display === "block") {
       newMessage.style.display = "none";
     } else {
@@ -28,14 +28,10 @@ const toggleClose = () => {
     }
 
     if (newMessage.style.display === "block") {
-      moreDetails.style.display = "none";
+      moreDetails.style.display = "none";      
     } else {
-      close.style.display = "block";
-    }
-
-   
-  
-    
+      close.style.display = "block";      
+    }    
   };    
            
  
@@ -47,6 +43,5 @@ const toggleClose = () => {
   };
 
   const newMessageHandler = () => {
-    readMore();
-    
+    readMore();    
   }
