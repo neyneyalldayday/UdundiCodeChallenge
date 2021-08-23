@@ -5,20 +5,7 @@ const toggleClose = () => {
     } else {
       close.style.display = "none";
     }
-  };
-  
-  
-  const plusHandler = () => {
-    toggleClose();
-    toggleDetails();
-    
-  };
-
-  const newMessageHandler = () => {
-    readMore();
-    
-  }
-  
+  };  
   
   const toggleDetails = () => {
     let moreDetails = document.getElementById("more-details");
@@ -30,10 +17,36 @@ const toggleClose = () => {
   };
 
   const readMore = () => {
+     
     let newMessage = document.getElementById("anotherMessage");
+    let moreDetails = document.getElementById("more-details");
+    let close = document.getElementById("starting-look");
     if (newMessage.style.display === "block") {
       newMessage.style.display = "none";
     } else {
       newMessage.style.display = "block";
     }
+
+    if (newMessage.style.display === "block") {
+      moreDetails.style.display = "none";
+    } else {
+      close.style.display = "block";
+    }
+
+   
+  
+    
+  };    
+           
+ 
+
+  const plusHandler = () => {
+    toggleClose();
+    toggleDetails();
+   
   };
+
+  const newMessageHandler = () => {
+    readMore();
+    
+  }

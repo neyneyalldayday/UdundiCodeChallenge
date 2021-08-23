@@ -4,7 +4,7 @@ $primary: #611818;
 $header-font: "Playfair Display", serif;
 $white: #ffffff;
 $content-font: Arial, Helvetica, sans-serif;
-
+@import "./media-queries";
 
 
 body { 
@@ -14,6 +14,7 @@ body {
   padding: 0px;
   overflow: hidden;
   background-color: #a16451;  
+  
   .side-bar {
     background-color: $primary;
     height: 100vh;
@@ -24,6 +25,7 @@ body {
     right: 0;
     top: 0;  
     bottom: 0;
+   
   }
   
   
@@ -37,7 +39,7 @@ body {
   left: 0;
   right: 0;
   top: 0;  
-
+  
 }
 
 .image-div {
@@ -48,7 +50,7 @@ body {
 
 .main-title {
     margin-top: 35%;
-   
+    
   
   }
 
@@ -60,12 +62,83 @@ body {
     padding: 20px 10px 10px 20px;
     animation-duration: 2s;
     animation-name: fadeInDown;
+
+   @include tablet {
+    
+    
+   }
+
+   @include bigmobile {
+     
+    
+   }
+
+   @include mobile {
+    
+    
+    
+   }
     
   }
 
-  
-  
+  h3 {
+    font-family: $header-font;
+    color: $primary;
+    letter-spacing: 2px;
+    font-size: 55px;
+
+   
+  }
+
+h4 {
+    font-family: $header-font;
+    color: $primary;
+    letter-spacing: 2px;
+    font-size: 66px;
+
     
+  }
+
+  h5 {
+    color: $white;
+    margin: 10px;
+    padding-left: 4px;
+    font-family: $content-font;
+  }
+
+  p {
+    font-size: 0.7rem;
+    margin: 20px 0 40px 0;
+    line-height: 25px;
+
+   
+
+     
+  }
+
+  h1 {
+    font-family: $header-font;
+    font-size: 11rem ;
+    color: $white;
+    z-index: 9;
+    letter-spacing: 10px;
+    margin-left: 7%;
+    margin-bottom: 0px;
+    animation-duration: 2s;
+    animation-name: bounceIn; 
+
+    @include tablet {
+      font-size: 5rem;
+     }
+
+     @include bigmobile {
+       font-size: 4rem;
+       }
+
+       @include mobile {
+        font-size: 3rem;
+      }
+     }    
   
 
   footer {
@@ -87,47 +160,14 @@ body {
 
   #anotherMessage {
     display: none;
+    
   }
 
-  h3 {
-    font-family: $header-font;
-    color: $primary;
-    letter-spacing: 2px;
-    font-size: 55px;
-  }
-
-h4 {
-    font-family: $header-font;
-    color: $primary;
-    letter-spacing: 2px;
-    font-size: 66px;
-  }
-
-  h5 {
-    color: $white;
-    margin: 10px;
-    padding-left: 4px;
-    font-family: $content-font;
-  }
-
-  p {
-    font-size: 0.7rem;
-    margin: 20px 0 40px 0;
-    line-height: 25px;
-  }
-
-  h1 {
-    font-family: $header-font;
-    font-size: 11rem;
-    color: $white;
-    z-index: 9;
-    letter-spacing: 10px;
-    margin-left: 7%;
-    margin-bottom: 0px;
-    animation-duration: 2s;
-    animation-name: bounceIn; 
+  
+    
    
-  }
+   
+  
 
   .close-btn {
     color: $primary;
