@@ -17,8 +17,8 @@ body {
   
   .side-bar {
     background-color: $primary;
-    height: 100vh;
-    width: 27%;
+    min-height: 100vh;
+    max-width: 27%;
     z-index: -1;
     position: absolute;
     left: 0;
@@ -30,8 +30,8 @@ body {
 
   .img-fluid {
     z-index: -3;
-    height: 100vh;
-    width: 100%;  
+    min-height: 100vh;
+    max-width: 100%;  
     position: absolute;
     left: 0;
     right: 0;
@@ -45,8 +45,8 @@ body {
 
 
 .image-div {
-  height: 100vh;
-  width:100vw;
+  min-height: 100vh;
+  max-width:100vw;
 
  
 }
@@ -55,7 +55,7 @@ body {
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 45%;
+    max-width: 45%;
     margin-top: 8rem;
     padding: 20px 10px 10px 20px;
     animation-duration: 2s;
@@ -65,7 +65,7 @@ body {
       font-family: $header-font;
       color: $primary;
       letter-spacing: 2px;
-      font-size: 66px;
+      font-size: 3rem;     
     }
 
     p {
@@ -75,23 +75,18 @@ body {
     }
 
    @include tablet {
-    width: 65%;
-   
-    
+    max-width: 65rem;    
    }
 
    @include bigmobile {
-    width: 95%;   
+    max-width: 100vw;   
    }
 
    @include mobile {
-    width: 100%;   
+    max-width: 100vw;     
    }
     
-  }
-
-  
-  
+  }  
 
   footer {
     display: flex;

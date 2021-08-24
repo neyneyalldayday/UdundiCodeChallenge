@@ -9,8 +9,8 @@ body {
 
 body .side-bar {
   background-color: #611818;
-  height: 100vh;
-  width: 27%;
+  min-height: 100vh;
+  max-width: 27%;
   z-index: -1;
   position: absolute;
   left: 0;
@@ -21,8 +21,8 @@ body .side-bar {
 
 body .img-fluid {
   z-index: -3;
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
   position: absolute;
   left: 0;
   right: 0;
@@ -30,14 +30,14 @@ body .img-fluid {
 }
 
 .image-div {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 45%;
+  max-width: 45%;
   margin-top: 8rem;
   padding: 20px 10px 10px 20px;
   animation-duration: 2s;
@@ -48,7 +48,7 @@ body .img-fluid {
   font-family: "Playfair Display", serif;
   color: #611818;
   letter-spacing: 2px;
-  font-size: 66px;
+  font-size: 3rem;
 }
 
 .card p {
@@ -59,19 +59,19 @@ body .img-fluid {
 
 @media screen and (max-width: 768px) {
   .card {
-    width: 65%;
+    max-width: 65rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .card {
-    width: 95%;
+    max-width: 100vw;
   }
 }
 
 @media screen and (max-width: 380px) {
   .card {
-    width: 100%;
+    max-width: 100vw;
   }
 }
 
